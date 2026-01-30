@@ -36,15 +36,22 @@ To ensure the small model generalized well and resisted real-world image noise, 
 | Total Images | 1289 |
 | Number of Classes | 8 |
 
-## ⚙️ Tech Stack & Dependencies
+## 📂 Dataset
+The dataset consists of **1,289 images** divided into 8 classes.
+
+*   **Source:** [Cucumber Disease Recognition Dataset on Kaggle](https://www.kaggle.com/datasets/sujaykapadnis/cucumber-disease-recognition-dataset?resource=download)
+*   **Note:** The notebook expects the image files to be placed in a directory named `images/` within the project root, following the structure used in the original Kaggle dataset.
+
+## 🚀 How to Run
+1.  Clone the repository.
+2.  **Download the Dataset** from the link above and extract the contents into an `images/` directory in the project root.
+3.  Install dependencies using the provided requirements file:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  Run the Jupyter Notebook `Cucumber Disease Classification Model.ipynb`.
+
+## 🔧 Tech Stack & Dependencies
 *   **Deep Learning:** PyTorch, Torchvision
 *   **Data Handling:** NumPy, Pandas, PIL
-*   **Evaluation:** Scikit-learn (for `f1_score`, `confusion_matrix`, `classification_report`)
-
-### 🚀 How to Run
-1.  Clone the repository.
-2.  Install required libraries (if not already present):
-    ```bash
-    pip install torch torchvision matplotlib seaborn scikit-learn pandas
-    ```
-3.  Execute the Jupyter Notebook `Cucumber Disease Classification Model.ipynb`.
+*   **Evaluation:** Scikit-learn
